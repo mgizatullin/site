@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Главная</title>
+
+<!-- base href="{$site_url}" -->
+
+<meta name="description" content="">
+
+<link rel="stylesheet" type="text/css" href="assets/design/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="assets/design/css/bootstrap-short.css">
+<link rel="stylesheet" type="text/css" href="assets/design/css/fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/design/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/design/css/style.css">
+
+<!--
+<link rel="icon" type="image/svg+xml" href="assets/design/images/icons/fav.svg">
+
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="">
+-->
+
+</head>
+<body>
+
+<header class="white">
+    <div class="container">
+        <div class="row gutters5 align-items-center justify-content-between">
+            <div class="header-logo col-auto">
+                <a href="/" class="logo">
+                    <img src="uploads/logo-white.svg" alt="">
+                </a>
+            </div>
+            <div class="header-right col-auto">
+                <div class="row gutters5 align-items-center">
+                    <nav class="header-nav col-auto">
+                        <ul class="navigation row no-gutters br10">
+                            <li class="col-auto with-submenu">
+                                <a href="">О компании</a>
+                            </li>
+                            <li class="col-auto with-submenu"><a href="">Продукция</a></li>
+                            <li class="col-auto with-submenu"><a href="">Лицензия и сертификаты</a></li>
+                            <li class="col-auto with-submenu"><a href="">Карьера</a></li>
+                            <li class="col-auto"><a href="">Закупки</a></li>
+                            <li class="col-auto"><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-auto">
+                        <div class="header-buttons br10">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <a href="" class="with-icon header-button">
+                                        <img src="assets/design/images/icons/book-white.svg" alt="">
+                                        <span>Пресс-релиз</span>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="" class="with-icon header-button with-submenu">
+                                        <img src="assets/design/images/icons/bag-white.svg" alt="">
+                                        <span>Группа компаний</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-search col-auto">
+                        <a href="" class="search-button br10">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0714 13.0456C10.8333 14.035 9.26328 14.5127 7.68394 14.3806C6.1046 14.2485 4.63578 13.5167 3.57916 12.3353C2.52254 11.154 1.95833 9.61297 2.0024 8.02864C2.04648 6.4443 2.69549 4.93699 3.81615 3.81626C4.93682 2.69553 6.44405 2.04648 8.02829 2.0024C9.61253 1.95832 11.1535 2.52257 12.3348 3.57925C13.516 4.63593 14.2478 6.10483 14.3799 7.68427C14.512 9.2637 14.0343 10.8338 13.045 12.072L17.7807 16.8071C17.8484 16.8701 17.9027 16.9462 17.9404 17.0307C17.978 17.1152 17.9983 17.2064 17.9999 17.2989C18.0015 17.3914 17.9845 17.4833 17.9499 17.5691C17.9152 17.6549 17.8636 17.7328 17.7982 17.7982C17.7328 17.8636 17.6549 17.9152 17.5691 17.9499C17.4833 17.9845 17.3915 18.0015 17.299 17.9999C17.2065 17.9983 17.1153 17.978 17.0308 17.9404C16.9463 17.9027 16.8702 17.8484 16.8071 17.7807L12.0714 13.0456ZM4.79237 11.6109C4.11823 10.9366 3.65909 10.0777 3.47297 9.14254C3.28684 8.20741 3.38209 7.23809 3.74668 6.35708C4.11126 5.47607 4.72882 4.72292 5.52129 4.19281C6.31377 3.6627 7.2456 3.37942 8.19902 3.37878C9.15244 3.37814 10.0847 3.66016 10.8778 4.18921C11.671 4.71825 12.2896 5.47057 12.6554 6.35109C13.0211 7.2316 13.1177 8.2008 12.9328 9.13617C12.748 10.0716 12.29 10.9311 11.6168 11.6063L11.6122 11.6109L11.6076 11.6146C10.7029 12.5171 9.47706 13.0237 8.19921 13.023C6.92135 13.0223 5.69602 12.5144 4.79237 11.6109Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-langs br10">
+                            <p class="current-lang">Ru</p>
+                            <ul class="langs">
+                                <li>Ru</li>
+                                <li>En</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="start-section">
+    <div id="startSlider">
+
+        <div class="start-slide">
+            <div class="video-level">
+                <video loop="true" muted="true" playsinline preload="yes" autoplay="true" poster="">
+                    <source src="uploads/start-video.mp4" type="video/mp4">
+                    <!-- source src="{$video_webm}" type="video/webm" -->
+                </video>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-end fullheight">
+                    <div class="start-content col-12">
+                        <div class="row justify-content-between align-items-end">
+                            <div class="col-lg-6">
+                                <p class="toptitle transparent-white">Работаем с 1994 года</p>
+                                <h1 class="start-caption">Корпорация Уралтехнострой</h1>
+                                <div class="content-text">
+                                    <p>Сопровождаем объект на всех этапах жизненного цикла: предпроектная проработка, разработка КД, поставка оборудования, шеф-монтаж и пусконаладка. Работаем на ключевых месторождениях России более 30 лет.</p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="" class="button strange tall orange with-arrow">
+                                    <span>Наша продукция</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+
+                                <a href="" class="button strange tall blue with-arrow">
+                                    <span>О компании</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-slide">
+            <div class="video-level bg" style="background-image:url(uploads/about.jpg);">
+
+            </div>
+
+            <div class="container">
+                <div class="row align-items-end fullheight">
+                    <div class="start-content col-12">
+                        <div class="row justify-content-between align-items-end">
+                            <div class="col-lg-6">
+                                <p class="toptitle transparent-white">Работаем с 1994 года</p>
+                                <h2 class="start-caption">Слайд 2</h2>
+                                <div class="content-text">
+                                    <p>Сопровождаем объект на всех этапах жизненного цикла: предпроектная проработка, разработка КД, поставка оборудования, шеф-монтаж и пусконаладка. Работаем на ключевых месторождениях России более 30 лет.</p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="" class="button strange tall orange with-arrow">
+                                    <span>Наша продукция</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+
+                                <a href="" class="button strange tall blue with-arrow">
+                                    <span>О компании</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-slide">
+            <div class="video-level">
+                <video loop="true" muted="true" playsinline preload="yes" autoplay="true" poster="">
+                    <source src="uploads/demo-video.mp4" type="video/mp4">
+                    <!-- source src="{$video_webm}" type="video/webm" -->
+                </video>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-end fullheight">
+                    <div class="start-content col-12">
+                        <div class="row justify-content-between align-items-end">
+                            <div class="col-lg-6">
+                                <p class="toptitle transparent-white">Работаем с 1994 года</p>
+                                <h2 class="start-caption">Слайд 3</h2>
+                                <div class="content-text">
+                                    <p>Сопровождаем объект на всех этапах жизненного цикла: предпроектная проработка, разработка КД, поставка оборудования, шеф-монтаж и пусконаладка. Работаем на ключевых месторождениях России более 30 лет.</p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="" class="button strange tall orange with-arrow">
+                                    <span>Наша продукция</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+
+                                <a href="" class="button strange tall blue with-arrow">
+                                    <span>О компании</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="start-bottom">
+        <div class="container">
+            <div class="start-slider-nav" id="startSliderNav">
+                <div class="row justify-content-end no-gutters">
+
+                    <div class="col-auto">
+                        <div class="start-nav active" id="sn0">
+                            <div class="start-nav-inner">
+                                <span class="start-nav-number">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="start-nav" id="sn1">
+                            <div class="start-nav-inner">
+                                <span class="start-nav-number">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="start-nav" id="sn2">
+                            <div class="start-nav-inner">
+                                <span class="start-nav-number">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="pt-big pb-medium bg-lightgrey">
+    <div class="container">
+        <div class="section-heading">
+            <div class="row align-items-end justify-content-between">
+                <div class="col-lg-6">
+                    <p class="toptitle white">Пресс-релиз</p>
+                    <h2 class="caption">Что происходит в отрасли и компании прямо сейчас</h2>
+                </div>
+                <div class="col-auto">
+                    <a href="" class="button strange grey with-arrow">
+                        <span>Смотреть все</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                            <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gutters10">
+            
+            <div class="col-lg-3">
+                <div class="news-item">
+                    <div class="item-img dark gradient br20">
+                        <img src="uploads/news1.jpg" alt="">
+                    </div>
+                    <div class="news-intro">
+                        <p class="news-date">03.11.2025</p>
+                        <h3 class="news-title">Подписано соглашение  о сотрудничестве с ключевыми заказчиками отрасли</h3>
+                        <div class="item-more transparent-white">
+                            <span>Читать</span>
+                            <img src="assets/design/images/icons/arr-top-right-white.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="abs-link"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="news-item">
+                    <div class="item-img dark gradient br20">
+                        <img src="uploads/news1.jpg" alt="">
+                    </div>
+                    <div class="news-intro">
+                        <p class="news-date">03.11.2025</p>
+                        <h3 class="news-title">Подписано соглашение  о сотрудничестве с ключевыми заказчиками отрасли</h3>
+                        <div class="item-more transparent-white">
+                            <span>Читать</span>
+                            <img src="assets/design/images/icons/arr-top-right-white.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="abs-link"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="news-item">
+                    <div class="item-img dark gradient br20">
+                        <img src="uploads/news1.jpg" alt="">
+                    </div>
+                    <div class="news-intro">
+                        <p class="news-date">03.11.2025</p>
+                        <h3 class="news-title">Подписано соглашение  о сотрудничестве с ключевыми заказчиками отрасли</h3>
+                        <div class="item-more transparent-white">
+                            <span>Читать</span>
+                            <img src="assets/design/images/icons/arr-top-right-white.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="abs-link"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="news-item">
+                    <div class="item-img dark gradient br20">
+                        <img src="uploads/news1.jpg" alt="">
+                    </div>
+                    <div class="news-intro">
+                        <p class="news-date">03.11.2025</p>
+                        <h3 class="news-title">Подписано соглашение  о сотрудничестве с ключевыми заказчиками отрасли</h3>
+                        <div class="item-more transparent-white">
+                            <span>Читать</span>
+                            <img src="assets/design/images/icons/arr-top-right-white.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="abs-link"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="manufacture-section pt-medium pb-big bg-blue">
+    <div class="container">
+        <div class="section-heading line-bottom white">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p class="toptitle transparent-white">Производство</p>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="caption text-center">Один завод закрывает потребности промышленной отрасли России</h2>
+                </div>
+                <div class="col-auto text-right">
+                    <div class="small-slider-counter">
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <span id="csCounter">01</span>
+                            </div>
+                            <div class="col-6">
+                                <span>06</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-wrapper">
+        <div>
+            <div id="centeredSlider">
+                
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide1.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Нефтегазовая отрасль</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide2.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Химическая отрасль</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide3.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Энергетика</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide1.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Нефтегазовая отрасль</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide2.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Химическая отрасль</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+                <div class="item-slide">
+                    <div class="manufacture-item bg br20" style="background-image:url(uploads/manufacture-slide3.jpg);">
+                        <div class="manufacture-intro">
+                            <h3 class="manufacture-title">Энергетика</h3>
+                            <div class="manufacture-arrow"></div>
+                            <div class="manufacture-introtext content-text">
+                                <p>Корпорация Уралтехнострой вновь стала победителем всероссийского конкурса в номинации «Продукция производственно-технического назначения»</p>
+                            </div>
+                        </div>
+                        <a href="" class="abs-link"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section pt-medium pb-big bg-lightgrey">
+    <div class="container">
+        <div class="section-heading">
+            <div class="row">
+                <div class="col-xxxl-6">
+                    <p class="toptitle white">О компании</p>
+                </div>
+                <div class="col">
+                    <h2 class="caption"><span class="text-orange">Более 30 лет</span> <br>на рынке нефтегазового оборудования</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="about-image col-lg-6">
+                <div class="item-img br20">
+                    <img src="uploads/about.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-text col-lg-6">
+                <div class="row flex-column justify-content-between">
+                    <div class="col-12">
+                        <div class="content-text">
+                            <p>Корпорация Уралтехнострой специализируется на проектировании, изготовлении и поставке оборудования для нефтяной, газовой, химической  и атомной промышленности. Предприятие основано  в 1992 году в Башкортостане</p>
+                            <p>Производственные мощности расположены в г. Туймазы и включают современные механообрабатывающие, сварочные и сборочные цеха</p>
+                            <p>Продукция поставляется крупнейшим нефтяным компаниям России: Роснефть, ЛУКОЙЛ, Газпром нефть, Татнефть, Башнефть. Корпорация является победителем конкурса «100 лучших товаров России»</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row align-items-end">
+                            <div class="col">
+                                <a href="" class="button strange grey with-arrow">
+                                    <span>Подробнее</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <img src="uploads/about-person.jpg" alt="" class="about-person br20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-numbers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-number">
+                        <strong>35 000 м2</strong>
+                        <div class="content-text">
+                            <p>производственных площадей  у компании</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="about-number">
+                        <strong>200+</strong>
+                        <div class="content-text">
+                            <p>реализованных проектов  по все стране</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="about-number last">
+                        <strong>800+</strong>
+                        <div class="content-text">
+                            <p>инженеров, сварщиков  и монтажников</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="rotation-section pb-big slider-with-arrows bg-lightgrey">
+    <div class="container">
+        <div class="rotation-wrapper br40">
+            <div class="rotation-slider-counter">
+                <div class="row no-gutters">
+                    <div class="col-6">
+                        <span id="rsCounter">01</span>
+                    </div>
+                    <div class="col-6">
+                        <span>02</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rotationSlider">
+
+                <div class="rotation-slide">
+                    <div class="rotation-heading">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6">
+                                <h2 class="caption">Сепаратор нефтегазовый  горизонтальный НГС-1</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rotation-image">
+                        <img src="uploads/rotation-image.jpg" alt="">
+                    </div>
+
+                    <div class="rotation-slide-bottom">
+                        <div class="row align-items-end justify-content-between">
+                            <div class="rotation-slide-left col-auto content-text">
+                                <p>Предназначен для разделения продукции скважин на нефть, газ и воду. Рабочее давление — до 6,3 МПа. Объём сепаратора — от 4 до 50 м³. Поставляется в блочном исполнении с обвязкой и системой контроля</p>
+                            </div>
+
+                            <div class="rotation-slide-buttons col-auto">
+                                <button type="button" class="slick-arrow svg-bg static slick-prev arrow-dark">
+                                    <svg width="67" height="48" viewBox="0 0 67 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M67 38V10C67 4.47715 62.5228 0 57 0H33.5H19.9624C17.8734 0 15.8368 0.654241 14.1386 1.87087L4.17615 9.00813C1.55488 10.8861 0 13.9127 0 17.1373V24V30.8627C0 34.0873 1.55488 37.1139 4.17615 38.9919L14.1386 46.1291C15.8368 47.3458 17.8734 48 19.9624 48H33.5H57C62.5228 48 67 43.5229 67 38Z" fill="white" fill-opacity="0.1"/>
+                                        <path class="arrow-bg" d="M67 38V10C67 4.47715 62.5228 0 57 0H33.5H19.9624C17.8734 0 15.8368 0.654241 14.1386 1.87087L4.17615 9.00813C1.55488 10.8861 0 13.9127 0 17.1373V24V30.8627C0 34.0873 1.55488 37.1139 4.17615 38.9919L14.1386 46.1291C15.8368 47.3458 17.8734 48 19.9624 48H33.5H57C62.5228 48 67 43.5229 67 38Z" fill="#0E2C3D" fill-opacity=""/>
+                                        <path d="M30 23.616L33.8365 18H37V18.768L34.4195 22.35L33.2308 24L34.6356 25.95L37 29.232V30H33.8365L30 24.384V23.616Z" fill="#0E2C3D"/>
+                                    </svg>
+                                </button>
+
+                                <button type="button" class="slick-arrow svg-bg static slick-next arrow-dark">
+                                    <svg width="67" height="48" viewBox="0 0 67 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 38V10C0 4.47715 4.47715 0 10 0H33.5H47.0376C49.1266 0 51.1632 0.654241 52.8614 1.87087L62.8239 9.00813C65.4451 10.8861 67 13.9127 67 17.1373V24V30.8627C67 34.0873 65.4451 37.1139 62.8239 38.9919L52.8614 46.1291C51.1632 47.3458 49.1266 48 47.0376 48H33.5H10C4.47715 48 0 43.5229 0 38Z" fill="white" fill-opacity="0.1"/>
+                                        <path class="arrow-bg" d="M0 38V10C0 4.47715 4.47715 0 10 0H33.5H47.0376C49.1266 0 51.1632 0.654241 52.8614 1.87087L62.8239 9.00813C65.4451 10.8861 67 13.9127 67 17.1373V24V30.8627C67 34.0873 65.4451 37.1139 62.8239 38.9919L52.8614 46.1291C51.1632 47.3458 49.1266 48 47.0376 48H33.5H10C4.47715 48 0 43.5229 0 38Z" fill="#0E2C3D" fill-opacity=""/>
+                                        <path d="M37 23.616L33.1635 18H30V18.768L32.5805 22.35L33.7692 24L32.3644 25.95L30 29.232V30H33.1635L37 24.384V23.616Z" fill="#0E2C3D"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="rotation-slide-right col-auto text-right">
+                                <a href="" class="button strange white with-arrow">
+                                    <span>Подробнее</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rotation-slide">
+                    <div class="rotation-heading">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6">
+                                <h2 class="caption">Второй слайд</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rotation-image">
+                        <img src="uploads/rotation-image.jpg" alt="">
+                    </div>
+
+                    <div class="rotation-slide-bottom">
+                        <div class="row align-items-end justify-content-between">
+                            <div class="rotation-slide-left col-auto content-text">
+                                <p>Предназначен для разделения продукции скважин на нефть, газ и воду. Рабочее давление — до 6,3 МПа. Объём сепаратора — от 4 до 50 м³. Поставляется в блочном исполнении с обвязкой и системой контроля</p>
+                            </div>
+
+                            <div class="rotation-slide-buttons col-auto">
+                                <button type="button" class="slick-arrow svg-bg static slick-prev arrow-dark">
+                                    <svg width="67" height="48" viewBox="0 0 67 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M67 38V10C67 4.47715 62.5228 0 57 0H33.5H19.9624C17.8734 0 15.8368 0.654241 14.1386 1.87087L4.17615 9.00813C1.55488 10.8861 0 13.9127 0 17.1373V24V30.8627C0 34.0873 1.55488 37.1139 4.17615 38.9919L14.1386 46.1291C15.8368 47.3458 17.8734 48 19.9624 48H33.5H57C62.5228 48 67 43.5229 67 38Z" fill="white" fill-opacity="0.1"/>
+                                        <path class="arrow-bg" d="M67 38V10C67 4.47715 62.5228 0 57 0H33.5H19.9624C17.8734 0 15.8368 0.654241 14.1386 1.87087L4.17615 9.00813C1.55488 10.8861 0 13.9127 0 17.1373V24V30.8627C0 34.0873 1.55488 37.1139 4.17615 38.9919L14.1386 46.1291C15.8368 47.3458 17.8734 48 19.9624 48H33.5H57C62.5228 48 67 43.5229 67 38Z" fill="#0E2C3D" fill-opacity=""/>
+                                        <path d="M30 23.616L33.8365 18H37V18.768L34.4195 22.35L33.2308 24L34.6356 25.95L37 29.232V30H33.8365L30 24.384V23.616Z" fill="#0E2C3D"/>
+                                    </svg>
+                                </button>
+
+                                <button type="button" class="slick-arrow svg-bg static slick-next arrow-dark">
+                                    <svg width="67" height="48" viewBox="0 0 67 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 38V10C0 4.47715 4.47715 0 10 0H33.5H47.0376C49.1266 0 51.1632 0.654241 52.8614 1.87087L62.8239 9.00813C65.4451 10.8861 67 13.9127 67 17.1373V24V30.8627C67 34.0873 65.4451 37.1139 62.8239 38.9919L52.8614 46.1291C51.1632 47.3458 49.1266 48 47.0376 48H33.5H10C4.47715 48 0 43.5229 0 38Z" fill="white" fill-opacity="0.1"/>
+                                        <path class="arrow-bg" d="M0 38V10C0 4.47715 4.47715 0 10 0H33.5H47.0376C49.1266 0 51.1632 0.654241 52.8614 1.87087L62.8239 9.00813C65.4451 10.8861 67 13.9127 67 17.1373V24V30.8627C67 34.0873 65.4451 37.1139 62.8239 38.9919L52.8614 46.1291C51.1632 47.3458 49.1266 48 47.0376 48H33.5H10C4.47715 48 0 43.5229 0 38Z" fill="#0E2C3D" fill-opacity=""/>
+                                        <path d="M37 23.616L33.1635 18H30V18.768L32.5805 22.35L33.7692 24L32.3644 25.95L30 29.232V30H33.1635L37 24.384V23.616Z" fill="#0E2C3D"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="rotation-slide-right col-auto text-right">
+                                <a href="" class="button strange white with-arrow">
+                                    <span>Подробнее</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.856 4.6914L9.12456 3.80432L7.12732 5.80156L7.57987 6.2541L11.3198 6.73561L13.0425 6.9574L13.3047 8.99338L13.7458 12.4201L14.1984 12.8726L16.1956 10.8754L15.3085 5.14395L14.856 4.6914Z" fill=""/>
+                                        <path d="M13.3047 8.99338L13.0425 6.9574L11.3198 6.73561L4.47567 13.5797L4.47567 14.6404L5.006 15.1707L5.53633 15.7011L6.59699 15.7011L13.3047 8.99338Z" fill=""/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-lightgrey">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="footer-left col-lg-6">
+                    <div class="row flex-column justify-content-between">
+                        <div class="footer-logo col-12">
+                            <a href="/" class="logo"><img src="uploads/logo-blue.svg" alt=""></a>
+                        </div>
+
+                        <div class="col-12 text-grey">
+                            <p>© 2026 ООО «Уралтехнострой». Все права защищены.</p>
+                            <p><a href="">Политика конфиденциальности</a></p>
+                            <p><a href="">Политика обработки персональных данных</a></p>
+                            <p class="copyright">Разработано в:<a href=""><img src="assets/design/images/panda.svg" alt=""></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right col-lg-6">
+
+                    <div class="content-item">
+                        <p class="text-grey">Адрес компании</p>
+                        <p><strong>450065, Россия, г. Уфа, ул. Свободы, 61</strong></p>
+                    </div>
+
+                    <div class="content-item">
+                        <p class="text-grey">Номера телефонов</p>
+                        <p><a href="tel:"><strong>+7(347) 216-66-61</strong></a></p>
+                        <p><a href="tel:"><strong>+7(347) 216-52-21</strong></a></p>
+                    </div>
+
+                    <div class="content-item">
+                        <p class="text-grey">Адрес электронной почты</p>
+                        <p><a href="mailto:"><strong>info@uralts.ru</strong></a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="up">
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_2125_694)">
+            <path class="button-bg" d="M43.8579 0H32H20.1421C17.49 0 14.9464 1.05357 13.0711 2.92893L2.92893 13.0711C1.05357 14.9464 0 17.49 0 20.1421V43.8579C0 46.51 1.05357 49.0536 2.92893 50.9289L13.0711 61.0711C14.9464 62.9464 17.49 64 20.1421 64H32H43.8579C46.51 64 49.0536 62.9464 50.9289 61.0711L61.0711 50.9289C62.9464 49.0536 64 46.51 64 43.8579V20.1421C64 17.49 62.9464 14.9464 61.0711 13.0711L50.9289 2.92893C49.0536 1.05357 46.51 0 43.8579 0Z" fill="#0E2C3D"/>
+            <path d="M31.68 25L27 28.3361V31.087H27.64L30.625 28.843L32 27.8094L33.625 29.0309L36.36 31.087H37V28.3361L32.32 25H31.68Z" fill="#0E2C3D"/>
+            <path d="M33.625 29.0309L32 27.8094L30.625 28.843V38.2696L31.375 39H32.125H32.875L33.625 38.2696V29.0309Z" fill="#0E2C3D"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_2125_694">
+                <rect width="64" height="64" fill="white"/>
+            </clipPath>
+        </defs>
+    </svg>
+</div>
+
+
+
+<div class="agree-cookie d-none s-bg-default s-border-bright" id="cookie">
+    <div class="container">
+        <div class="row">
+            <div class="col content-text">
+                <p>Наш сайт использует файлы cookie и аналогичные технологии для улучшения работы сервиса, персонализации контента и анализа трафика. Некоторые данные могут передаваться третьим лицам в соответствии с нашей <a href="" class="text-green">Политикой конфиденциальности</a>. 
+                Продолжая пользоваться сайтом, вы <a href="" class="text-green">соглашаетесь с использованием cookie</a>. Вы можете отключить их в настройках браузера, но это может повлиять на функциональность сервиса.</p>
+            </div>
+            <div class="col-md-auto">
+                <button type="button" class="button green" id="cookieButton">Принять</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-blocks">
+	
+	
+
+</div>
+
+
+<script src="assets/design/js/jquery-3.6.0.min.js"></script>
+<script src="assets/design/js/fancybox.umd.js"></script>
+<script src="assets/design/js/slick.js"></script>
+<script src="assets/design/js/jquery.maskedinput.min.js"></script>
+<script src="assets/design/js/smooth-scroll.js"></script>
+<script src="assets/design/js/main.js"></script>
+
+</body>
+</html>
