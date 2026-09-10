@@ -212,3 +212,8 @@
  .delivery-stats { grid-template-columns:1fr; } .delivery-stat { min-height:120px; gap:20px; }
 }
 @media(prefers-reduced-motion:reduce) { .internal-page * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+
+/* Narrow navigation uses the same dark icon treatment as the light header. */
+@media(max-width:1199px) { .internal-page .header-right .header-button img { filter:brightness(0); } }
+.spec-table { table-layout:fixed; overflow-wrap:anywhere; }
+@media(min-width:1400px) { .inner-hero-contacts .inner-hero-image { width:137.16%; max-width:none; height:209.97%; left:-18.58%; top:-53.69%; } }
