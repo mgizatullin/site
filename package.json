@@ -1,0 +1,7 @@
+{
+  "name": "uralts-static-site",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/preview.mjs"
+  }
+}
