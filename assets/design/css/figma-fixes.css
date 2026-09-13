@@ -1,0 +1,58 @@
+/* Corrections after direct Figma comparison. Keep the project grid authoritative. */
+.internal-page .section-kicker{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;background:#fff;font-size:14px;line-height:1.4}
+.internal-page .section-kicker:before{content:"";width:10px;height:10px;border-radius:8px 3px 3px 3px;background:var(--accent)}
+.internal-page .section-title{margin:0;font-size:60px;line-height:1.05;letter-spacing:-.03em;font-weight:600}
+.internal-page .body-copy{font-size:16px;line-height:1.4;letter-spacing:-.02em;color:rgba(14,44,61,.8)}
+.internal-page .body-copy p:last-child{margin-bottom:0}
+
+/* Decorative assets exported from the source Figma nodes. */
+.career-orange-card,.vacancy-card.vacancy-cta,.vacancy-apply,.growth-card{position:relative;overflow:hidden}
+.career-orange-card>* ,.vacancy-card.vacancy-cta>* ,.vacancy-apply>* ,.growth-card>*{position:relative;z-index:2}
+.career-orange-card:after,.vacancy-card.vacancy-cta:after,.vacancy-apply:after,.growth-card:before{content:"";position:absolute;z-index:1;pointer-events:none;background-repeat:no-repeat;background-position:center;background-size:contain}
+.career-orange-card:after{width:675px;height:630px;right:-225px;top:-40px;background-image:url('https://www.figma.com/api/mcp/asset/015566dd-aed1-41cf-9f0e-ab56e29225d7.svg');transform:rotate(120deg)}
+.vacancy-card.vacancy-cta:after{width:910px;height:847px;left:-100px;top:-94px;background-image:url('https://www.figma.com/api/mcp/asset/6ee00e93-72d2-4a15-8b70-d94b27e70876.svg');transform:rotate(120deg)}
+.vacancy-apply:after{width:990px;height:883px;left:145px;top:-125px;background-image:url('https://www.figma.com/api/mcp/asset/92635b2c-aef0-4932-aaea-46340e3e2836.svg');transform:rotate(111deg)}
+.growth-card:before{width:1094px;height:1020px;left:470px;top:-190px;background-image:url('https://www.figma.com/api/mcp/asset/19e2c301-de54-4ada-b9df-acfd91207146.svg');transform:rotate(120deg)}
+
+/* About page: geometry follows the 1920px Figma frame (40px outer gutters / 1840px content). */
+.figma-about-hero{height:700px}
+.figma-about-hero .inner-hero-image{max-width:none;width:137.16%;height:209.97%;left:-34.72%;top:-53.69%;object-fit:cover}
+.figma-about-hero:after{background:linear-gradient(180deg,rgba(0,0,0,.58) 0,rgba(0,0,0,.08) 42%,rgba(0,0,0,.55) 100%)}
+.about-history{padding-top:180px}
+.about-history-head{max-width:940px;margin:0 auto;text-align:center;position:relative}
+.about-history-head .section-kicker{position:absolute;right:calc(100% + 316px);top:0;white-space:nowrap}
+.about-history-head .section-title{margin:0}
+.about-history-head .body-copy{margin-top:48px;display:flex;flex-direction:column;gap:32px;color:var(--ink)}
+.history-timeline{height:511px;margin-top:103px;position:relative;border-top:1px solid rgba(14,44,61,.12);overflow:hidden;text-align:left;background:repeating-linear-gradient(90deg,transparent 0 7px,rgba(14,44,61,.12) 7px 8px) 0 15px/100% 20px no-repeat}
+.history-timeline:before{content:"";position:absolute;left:49.6%;top:15px;width:2px;height:332px;background:var(--accent)}
+.history-timeline:after{content:"";position:absolute;left:49.35%;top:12px;width:12px;height:12px;background:var(--accent);border-radius:8px 3px 3px 3px}
+.history-year{left:52%;top:70px;font-size:100px;line-height:1.2}
+.history-year:before{display:none}
+.history-year small{margin-top:110px;max-width:463px}
+.history-year-next{left:88%;top:260px;font-size:100px}
+.history-controls{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:4px}
+.history-controls span{display:flex;width:67px;height:48px;align-items:center;justify-content:center;border-radius:10px;background:#ebecf2;font-size:20px}
+.history-image{height:900px;object-fit:cover}
+.about-leadership{padding-top:180px}
+.leadership-head{margin-bottom:60px}
+.leadership-head .section-title{margin-top:32px}
+.leadership-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.leader-photo{height:560px}
+.about-mission{height:960px;min-height:960px;margin-top:180px;background:#0d334a;border-radius:40px}
+.about-mission-bg,.about-mission-render{position:absolute;pointer-events:none;max-width:none}
+.about-mission-bg{inset:0;width:100%;height:100%;object-fit:cover}
+.about-mission-render{width:3229px;height:1802px;left:-1176px;top:-60px;object-fit:cover;transform:rotate(180deg) scaleY(-1)}
+.about-mission:after{display:none}
+.about-mission-inner{padding:64px;position:relative;z-index:2}
+.about-mission-copy{margin-top:32px}
+.value-grid{left:64px;right:63px;bottom:64px;height:351px;z-index:3}
+.value-card{min-height:351px}
+.about-code{padding-top:180px;min-height:607px;grid-template-columns:1fr 1fr;gap:20px}
+.code-card{margin-top:225px}
+.code-copy{padding-left:10px}
+.about-map{margin-top:0;height:900px;min-height:900px}
+.about-map-card{left:40px;top:100px;width:678px;height:700px;padding:52px 44px 44px}
+
+@media(max-width:1399px){.internal-page .section-title,.feature-row-copy h2{font-size:48px}.figma-about-hero .inner-hero-image{width:100%;height:100%;left:0;top:0}.about-history-head .section-kicker{position:static;margin-bottom:28px}.about-mission-render{left:-1450px}.value-grid{grid-template-columns:repeat(5,minmax(190px,1fr));overflow-x:auto}.about-code{gap:40px}}
+@media(max-width:991px){.about-mission{height:auto;min-height:0;padding-bottom:32px}.about-mission-render{display:none}.value-grid{position:relative;left:auto;right:auto;bottom:auto;height:auto;margin:260px 32px 0;grid-template-columns:1fr 1fr;overflow:visible}.about-code{grid-template-columns:1fr;padding-top:100px}.code-card{margin-top:40px}.about-map-card{position:relative;left:auto;top:auto;margin:40px auto;width:calc(100% - 40px)}.about-map{padding-top:20px}.history-year-next{display:none}}
+@media(max-width:575px){.internal-page .section-title,.feature-row-copy h2{font-size:38px}.history-timeline{height:400px}.history-year{left:12%;font-size:72px}.history-timeline:before{left:8%}.history-timeline:after{left:calc(8% - 5px)}.history-year small{margin-top:75px}.history-image{height:420px}.leadership-grid{grid-template-columns:1fr}.value-grid{grid-template-columns:1fr;margin-top:220px}.about-map-card{height:auto;min-height:0;padding:32px 24px}.about-contact-row{grid-template-columns:1fr}.career-orange-card:after,.vacancy-card.vacancy-cta:after,.vacancy-apply:after,.growth-card:before{opacity:.7}}
