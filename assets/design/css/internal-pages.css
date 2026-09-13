@@ -184,6 +184,25 @@
  .product-image-panel .equipment-image { height:320px; } .contact-map { margin-top:80px; }
  .contact-map img { min-height:400px; }
 }
+@media(max-width:767px) {
+ .internal-page .header-right { top:74px; left:12px; right:12px; max-height:calc(100dvh - 90px); padding:16px; }
+ .inner-hero { height:auto; min-height:480px; }
+ .inner-hero .container { min-height:480px; }
+ .inner-hero-bottom { align-items:flex-start; }
+ .inner-years { width:100%; flex-wrap:wrap; }
+ .inner-years button { flex:1 1 0; min-width:72px; }
+ .inner-pagination { align-items:flex-start; }
+ .inner-pagination ul { max-width:100%; }
+ .inner-pagination .page-arrows { margin-left:auto; }
+ .document-card { gap:20px; }
+ .contact-map img { min-height:320px; }
+ .product-v1-application .product-actions { flex-direction:column; width:100%; }
+ .product-v2-copy .product-actions .button { width:100%; }
+ .product-thumbs { max-width:100%; overflow-x:auto; padding-bottom:4px; }
+ .product-thumbs button { flex:0 0 auto; }
+ .spec-table { font-size:13px; }
+ .spec-table th,.spec-table td { padding:14px 12px; }
+}
 @media(max-width:575px) {
  .internal-page .container { padding-left:16px; padding-right:16px; }
  .internal-page header { padding-top:16px; } .inner-hero { height:500px; }
