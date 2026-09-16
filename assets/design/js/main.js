@@ -130,6 +130,13 @@ $(document).ready(function() {
         mobileCss.setAttribute('data-mobile-figma-css', '1');
         document.head.appendChild(mobileCss);
     }
+    if (!document.querySelector('link[data-mobile-figma-detail-css]')) {
+        var mobileDetailCss = document.createElement('link');
+        mobileDetailCss.rel = 'stylesheet';
+        mobileDetailCss.href = 'assets/design/css/mobile-figma-detail.css';
+        mobileDetailCss.setAttribute('data-mobile-figma-detail-css', '1');
+        document.head.appendChild(mobileDetailCss);
+    }
     if (document.querySelector('script[data-site-ui-loader]')) return;
     var script = document.createElement('script');
     script.src = 'assets/design/js/site-ui.js';
