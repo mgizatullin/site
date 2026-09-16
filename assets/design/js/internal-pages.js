@@ -4,7 +4,7 @@
     var dialog = document.querySelector('#availabilityDialog');
 
     document.querySelectorAll('[data-unavailable]').forEach(function (button) {
-        if (button.matches('.search-button,.header-button.with-submenu,[data-site-dropdown-trigger]')) return;
+        if (button.matches('.search-button,.header-button.with-submenu,[data-site-dropdown-trigger],.inner-years button')) return;
         button.addEventListener('click', function (event) {
             event.preventDefault();
             if (!dialog) return;
