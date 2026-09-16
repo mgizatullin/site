@@ -1,0 +1,56 @@
+/* Final mobile refinements from UralTS1 320px adaptive frames. Loaded after mobile-figma.css. */
+@media (max-width:575px){
+  /* Homepage — Figma 15:3959 */
+  .start-section,.start-slide{height:600px;min-height:600px}
+  .start-section .fullheight{min-height:600px;padding:158px 0 112px;align-items:stretch!important}
+  .start-content>.row{display:flex;flex-direction:column;align-items:stretch!important;height:100%;justify-content:flex-start!important}
+  .start-content .col-lg-6,.start-content .col-auto{width:100%;max-width:none;flex:0 0 auto}
+  .start-section .toptitle{font-size:12px;padding:8px 10px 8px 28px;margin-bottom:16px;border-radius:6px}
+  .start-caption{font-size:32px;line-height:1.1;letter-spacing:-.03em;margin-bottom:20px}
+  .start-section .content-text{font-size:14px;line-height:1.4}
+  .start-section .col-auto{margin-top:28px}
+  .start-section .button.strange.tall{width:100%;height:70px;margin-bottom:8px;padding:20px;font-size:14px}
+  .start-section .button.strange.tall:last-child{margin-bottom:0}
+  #startSlider .slick-arrow{display:none!important}
+  .start-bottom{bottom:0}
+  .start-slider-nav{padding:16px 0 10px;border-top:1px solid rgba(255,255,255,.1)}
+  .start-slider-nav>.row{justify-content:space-between!important;width:100%}
+  .start-nav{width:48px;height:48px}
+
+  /* Article — Figma 2:4856 */
+  .article-page .article-hero{height:455px;min-height:455px;background:#1b3b84;color:#fff}
+  .article-page .article-hero .container{height:455px;min-height:455px;padding-top:72px;padding-bottom:40px;display:flex;flex-direction:column}
+  .article-page .article-heading{margin-top:auto}
+  .article-page .article-heading .inner-title{font-size:32px!important;line-height:1.1;margin:0 0 20px}
+  .article-page .article-heading time{font-size:14px;color:rgba(255,255,255,.6)}
+  .article-page .article-body{padding-top:40px}
+  .article-page .article-image{display:block;width:100%;height:200px;border-radius:12px;object-fit:cover;margin-bottom:32px}
+  .article-page .article-body .content-text{font-size:14px;line-height:1.4}
+  .article-page .article-body .content-text p{margin-bottom:24px}
+  .article-page .article-related{padding-top:36px}
+  .article-page .article-related-heading{display:flex;flex-direction:column;align-items:stretch;gap:24px;margin-bottom:24px}
+  .article-page .article-related-heading h2{font-size:26px;line-height:1.05;margin:0}
+  .article-page .article-related .news-grid{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;margin-left:0;margin-right:-10px;padding-right:10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .article-page .article-related .news-grid>[class*="col-"]{flex:0 0 280px;max-width:280px;padding-left:0;padding-right:0;scroll-snap-align:start}
+  .article-page .article-related .news-item{height:340px}
+  .article-page .article-all{order:2;width:100%;height:49px;padding:16px 20px;border-radius:10px;background:#ebecf2;color:#0e2c3d;text-align:left;font:700 14px/1.2 GetVoIPGrotesque,Montserrat,sans-serif;position:relative}
+  .article-page .article-all img{position:absolute;right:16px;top:16px;width:16px;height:16px;filter:brightness(0)}
+
+  /* Mobile footers on both homepage and internal pages */
+  footer .footer-inner>.row{flex-direction:column}
+  footer .footer-right{order:0;padding-top:0}
+  footer .footer-left{order:1;margin-top:40px}
+  footer .footer-logo{margin-bottom:28px}
+  footer .footer-logo .logo{width:126px}
+  footer .footer-right .content-item{margin-bottom:28px}
+  footer .footer-right .content-item>p:first-child{font-size:12px;margin-bottom:16px}
+  footer .footer-right .content-item strong{font-size:24px;line-height:1.2}
+  footer .footer-left .text-grey p{font-size:12px;line-height:1.4;margin-bottom:16px}
+
+  /* Prevent desktop spacing rules from reopening mobile gaps. */
+  .career-story .container,.vacancies-section .container,.catalog-section .container{padding-left:10px;padding-right:10px}
+  .feature-stack,.social-feature-stack{margin-bottom:0}
+  .about-leadership .container{overflow:hidden}
+  .leadership-grid,.value-grid{scrollbar-width:none}
+  .leadership-grid::-webkit-scrollbar,.value-grid::-webkit-scrollbar,.article-related .news-grid::-webkit-scrollbar{display:none}
+}
