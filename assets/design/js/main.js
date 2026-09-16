@@ -123,6 +123,13 @@ $(document).ready(function() {
 });
 
 (function loadSharedSiteUi() {
+    if (!document.querySelector('link[data-mobile-figma-css]')) {
+        var mobileCss = document.createElement('link');
+        mobileCss.rel = 'stylesheet';
+        mobileCss.href = 'assets/design/css/mobile-figma.css';
+        mobileCss.setAttribute('data-mobile-figma-css', '1');
+        document.head.appendChild(mobileCss);
+    }
     if (document.querySelector('script[data-site-ui-loader]')) return;
     var script = document.createElement('script');
     script.src = 'assets/design/js/site-ui.js';
